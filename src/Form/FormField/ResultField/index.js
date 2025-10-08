@@ -3,11 +3,18 @@ import { Result, Value, Note, Link, Date } from "./styled";
 
 const ResultField = ({ result, LCID, currencyToName, amount, rateDate }) => {
 
-    const resultString =
-        amount
-            ? result.toLocaleString(LCID, { style: 'currency', currency: currencyToName })
-            : ""
-        ;
+    let resultString = "";
+    try {
+        if (amount === '' || amount === 0) {
+            // show zero formatted if amount is zero
+            resultString = (0).toLocaleString(LCID || undefined, { style: 'currency', currency: currencyToName || 'USD' });
+        } else if (typeof result === 'number') {
+            resultString = result.toLocaleString(LCID || undefined, { style: 'currency', currency: currencyToName || 'USD' });
+        }
+    } catch (e) {
+        // Fallback: simple number with two decimals
+        resultString = result ? result.toFixed(2) : "0.00";
+    }
 
     return (
         <>

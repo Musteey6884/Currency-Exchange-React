@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="48" viewBox="0 0 3 2">
+  <!-- Simple Nigerian flag: green-white-green -->
+  <rect width="1" height="2" x="0" y="0" fill="#008753" />
+  <rect width="1" height="2" x="1" y="0" fill="#fff" />
+  <rect width="1" height="2" x="2" y="0" fill="#008753" />
+</svg>

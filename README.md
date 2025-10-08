@@ -219,3 +219,30 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Local proxy & RapidAPI (development)
+
+This project includes a small local proxy server used in development to avoid CORS issues and to optionally call third-party APIs server-side.
+
+1) Create a `.env` file in the project root (or set the environment variable in your shell) with your RapidAPI key:
+
+```
+# .env
+RAPIDAPI_KEY=your_rapidapi_key_here
+```
+
+2) Install dependencies and start the proxy server (in one terminal):
+
+```powershell
+npm install
+$env:RAPIDAPI_KEY = 'your_rapidapi_key_here'  # PowerShell example for current session
+npm run start:server
+```
+
+3) Start the React dev server in another terminal:
+
+```powershell
+npm start
+```
+
+The app will first try to use the local RapidAPI endpoint (`/api/convert-rapidapi`) and then fall back to other local or public proxies. This is intended for development and debugging only.

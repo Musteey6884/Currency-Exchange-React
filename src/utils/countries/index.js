@@ -31,6 +31,21 @@ import phpFlagImage from '../flags/Philippines.svg';
 import sgdFlagImage from '../flags/Singapore.svg';
 import thbFlagImage from '../flags/Thailand.svg';
 import zarFlagImage from '../flags/SouthAfrica.svg';
+import ngnFlagImage from '../flags/Nigeria.svg';
+import egpFlagImage from '../flags/Egypt.svg';
+import kesFlagImage from '../flags/Kenya.svg';
+import ghsFlagImage from '../flags/Ghana.svg';
+import madFlagImage from '../flags/Morocco.svg';
+import tzsFlagImage from '../flags/Tanzania.svg';
+import ugxFlagImage from '../flags/Uganda.svg';
+import dzdFlagImage from '../flags/Algeria.svg';
+import etbFlagImage from '../flags/Ethiopia.svg';
+import aoaFlagImage from '../flags/Angola.svg';
+import bwpFlagImage from '../flags/Botswana.svg';
+import zmwFlagImage from '../flags/Zambia.svg';
+import murFlagImage from '../flags/Mauritius.svg';
+import mznFlagImage from '../flags/Mozambique.svg';
+import gabFlagImage from '../flags/Gabon.svg';
 
 export const countries = [
   {
@@ -263,5 +278,110 @@ export const countries = [
     flagImage: zarFlagImage,
     country: "Republic of South Africa",
     LCID: "en-ZA",
+  },
+  {
+    name: "Nigerian Naira",
+    shortname: "NGN",
+    flagImage: ngnFlagImage,
+    country: "Nigeria",
+    LCID: "en-NG",
+  },
+  {
+    name: "Egyptian Pound",
+    shortname: "EGP",
+    flagImage: egpFlagImage,
+    country: "Egypt",
+    LCID: "ar-EG",
+  },
+  {
+    name: "Kenyan Shilling",
+    shortname: "KES",
+    flagImage: kesFlagImage,
+    country: "Kenya",
+    LCID: "en-KE",
+  },
+  {
+    name: "Ghanaian Cedi",
+    shortname: "GHS",
+    flagImage: ghsFlagImage,
+    country: "Ghana",
+    LCID: "en-GH",
+  },
+  {
+    name: "Moroccan Dirham",
+    shortname: "MAD",
+    flagImage: madFlagImage,
+    country: "Morocco",
+    LCID: "ar-MA",
+  },
+  {
+    name: "Tanzanian Shilling",
+    shortname: "TZS",
+    flagImage: tzsFlagImage,
+    country: "Tanzania",
+    LCID: "en-TZ",
+  },
+  {
+    name: "Ugandan Shilling",
+    shortname: "UGX",
+    flagImage: ugxFlagImage,
+    country: "Uganda",
+    LCID: "en-UG",
+  },
+  {
+    name: "Algerian Dinar",
+    shortname: "DZD",
+    flagImage: dzdFlagImage,
+    country: "Algeria",
+    LCID: "ar-DZ",
+  },
+  {
+    name: "Ethiopian Birr",
+    shortname: "ETB",
+    flagImage: etbFlagImage,
+    country: "Ethiopia",
+    LCID: "en-ET",
+  },
+  {
+    name: "Angolan Kwanza",
+    shortname: "AOA",
+    flagImage: aoaFlagImage,
+    country: "Angola",
+    LCID: "pt-AO",
+  },
+  {
+    name: "Botswana Pula",
+    shortname: "BWP",
+    flagImage: bwpFlagImage,
+    country: "Botswana",
+    LCID: "en-BW",
+  },
+  {
+    name: "Zambian Kwacha",
+    shortname: "ZMW",
+    flagImage: zmwFlagImage,
+    country: "Zambia",
+    LCID: "en-ZM",
+  },
+  {
+    name: "Mauritian Rupee",
+    shortname: "MUR",
+    flagImage: murFlagImage,
+    country: "Mauritius",
+    LCID: "en-MU",
+  },
+  {
+    name: "Mozambican Metical",
+    shortname: "MZN",
+    flagImage: mznFlagImage,
+    country: "Mozambique",
+    LCID: "pt-MZ",
+  },
+  {
+    name: "Gabonese Franc",
+    shortname: "XAF",
+    flagImage: gabFlagImage,
+    country: "Gabon",
+    LCID: "fr-GA",
   },
 ];
