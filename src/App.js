@@ -11,7 +11,7 @@ function App() {
     <>
       <GlobalStyles />
       <Container>
-        <Header title="simple currency exchange" />
+        <Header title="ahmeem simple currency exchange" />
         <Clock />
         <Form
         />
